@@ -24,3 +24,4 @@ To run your tests
 
 
 [Reverse An Array](./javascript/code-challenges/Adv-JS-Challenge1/README.md)
+[Array-Insert-Shift](./javascript/code-challenges/array-insert-shift/README.md)
