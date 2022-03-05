@@ -26,3 +26,4 @@ To run your tests
 * [Reverse An Array](./javascript/code-challenges/Adv-JS-Challenge1/README.md)
 * [Array-Insert-Shift](./javascript/code-challenges/array-insert-shift/README.md)
 * [Array-Binary-Search](./javascript/code-challenges/array-binary-search/README.md)
+* [linked-list](./javascript/code-challenges/linked-list/README.md)
