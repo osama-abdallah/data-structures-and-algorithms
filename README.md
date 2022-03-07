@@ -22,8 +22,10 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
+# Table Of Content
 
 * [Reverse An Array](./javascript/code-challenges/Adv-JS-Challenge1/README.md)
 * [Array-Insert-Shift](./javascript/code-challenges/array-insert-shift/README.md)
 * [Array-Binary-Search](./javascript/code-challenges/array-binary-search/README.md)
 * [linked-list](./javascript/code-challenges/linked-list/README.md)
+* [linked-list-insertions](./javascript/code-challenges/linked-list-insertions/README.md)
