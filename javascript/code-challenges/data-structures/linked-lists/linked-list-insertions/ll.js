@@ -82,5 +82,40 @@ class LinkedList {
     node.next = this.head;
     this.head = node;
     return;
-  }}
+  }
+  include(testValue) {
+
+    if(!this.head) {
+      return false;
+    }
+    let currentNode = this.head;
+    while(currentNode !== null) {
+      if (currentNode.value === testValue) {
+        return true;
+      } else {
+        currentNode = currentNode.next;
+      }
+    }
+    return false;
+  }
+  toString() {
+
+    let arrayString = '';
+    let currentNode = this.head;
+
+    if (!this.head) {
+      return `NULL`;
+    } else {
+      arrayString = `{${this.head.value}} -> `;
+    }
+
+    while(currentNode.next !== null) {
+      currentNode = currentNode.next;
+      arrayString += `{${currentNode.value}} -> `;
+    }
+    arrayString += `NULL`;
+
+    return arrayString;
+  }
+}
 module.exports = LinkedList;
