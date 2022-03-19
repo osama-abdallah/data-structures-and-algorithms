@@ -24,11 +24,12 @@ To run your tests
 
 # Table Of Content
 
-* [Reverse An Array](./javascript/code-challenges/Adv-JS-Challenge1/README.md)
-* [Array-Insert-Shift](./javascript/code-challenges/array-insert-shift/README.md)
-* [Array-Binary-Search](./javascript/code-challenges/array-binary-search/README.md)
-* [linked-list](./javascript/code-challenges/data-structures/linked-lists/linked-list/README.md)
-* [linked-list-insertions](./javascript/code-challenges/data-structures/linked-lists/linked-list-insertions/README.md)
-* [linked-list-kth](./javascript/code-challenges/data-structures/linked-lists/linked-list-kth/README.md)
-* [linked-list-zip](./javascript/code-challenges/data-structures/linked-lists/linked-list-zip/README.md)
-* [stack-and-queue](./javascript/code-challenges/data-structures/stack-and-queue/README.md)
+- [Reverse An Array](./javascript/code-challenges/Adv-JS-Challenge1/README.md)
+- [Array-Insert-Shift](./javascript/code-challenges/array-insert-shift/README.md)
+- [Array-Binary-Search](./javascript/code-challenges/array-binary-search/README.md)
+- [linked-list](./javascript/data-structures/linked-lists/linked-list/README.md)
+- [linked-list-insertions](./javascript/data-structures/linked-lists/linked-list/README.md)
+- [linked-list-kth](./javascript/data-structures/linked-lists/linked-list/README.md)
+- [linked-list-zip](./javascript/data-structures/linked-lists/linked-list-zip/README.md)
+- [stack-and-queue](./javascript/data-structures/stack-and-queue/README.md)
+- [stack-queue-pseudo](./javascript/data-structures/stack-and-queue/README.md)
