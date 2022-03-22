@@ -53,3 +53,21 @@ Set the value of stackone to stackTwo
 dequeue()
 5. Use the pop method from stackone to remove the first item in the queue
 6. Return (or hold in memory) StackOne.
+
+# Stack Queue Animal Shelter
+
+## Challenge Summary
+
+Create a class called AnimalShelter which holds only dogs and cats. Implement the following methods, enqueue with an argument "animal" which can be either a dog or a cat object, Dequeue argument "pref" which can be either "dog" or "cat", return; either a dog or a cat, based on preference and if pref is not "dog" or "cat" then return null.
+
+## Whiteboard Process
+
+![image](./assets/stack-queue-animal-shelter.png)
+
+## Approach &-Efficiency
+
+O(1) for Both Methods
+
+## Solution
+
+The shelter operates using a first-in, first-out approach. The following methods were implemented enqueue with an argument "animal" which can be either a dog or a cat object & dequeue argument "pref" which can be either "dog" or "cat" & returns either a dog or a cat, based on preference and if pref is not "dog" or "cat" then return null.
