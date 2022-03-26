@@ -71,3 +71,22 @@ O(1) for Both Methods
 ## Solution
 
 The shelter operates using a first-in, first-out approach. The following methods were implemented enqueue with an argument "animal" which can be either a dog or a cat object & dequeue argument "pref" which can be either "dog" or "cat" & returns either a dog or a cat, based on preference and if pref is not "dog" or "cat" then return null.
+
+# Stack Queue Brackets
+
+## Challenge Summary
+
+Write a function called validate brackets; Arguments: string; Return: boolean; representing whether or not the brackets in the string are balanced.
+There are 3 types of brackets; Round Brackets : (); Square Brackets : []; Curly Brackets : {}
+
+## Whiteboard Process
+
+![image](./assets/stack-queue-brackets.png)
+
+## Approach &-Efficiency
+
+O(1) for Both Methods
+
+## Solution
+
+Write a function called validate brackets, create stack instance, iterate using loop to check if open brackets exist, if so push to stack, if not define variable to contain matching open brackets, if stack is empty return ture.
