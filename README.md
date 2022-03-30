@@ -35,3 +35,5 @@ To run your tests
 - [stack-queue-pseudo](./javascript/data-structures/stack-and-queue/README.md)
 - [stack-queue-animal-shelter](./javascript/data-structures/stack-and-queue/README.md)
 - [stack-queue-brackets](./javascript/data-structures/stack-and-queue/README.md)
+- [trees](./javascript/data-structures/trees/README.md)
+- [max-tree](./javascript/data-structures/trees/README.md)
