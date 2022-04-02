@@ -51,3 +51,18 @@ BigO space = O(1), time = O(n^2)
 ### Solution
 
 created max-tree to finad max in binary tree
+
+## Tree Breadth First
+
+### Challenge Summary
+
+Write a function called breadth first, Arguments: tree,
+Return: list of all values in the tree, in the order they were encountered
+
+### Whiteboard Process
+
+![image](./assets/tree-breadth-first.png)
+
+### Approach & Efficiency
+
+both methods O(n)
