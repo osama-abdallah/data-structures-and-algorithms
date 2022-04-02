@@ -37,3 +37,4 @@ To run your tests
 - [stack-queue-brackets](./javascript/data-structures/stack-and-queue/README.md)
 - [trees](./javascript/data-structures/trees/README.md)
 - [max-tree](./javascript/data-structures/trees/README.md)
+- [tree-breadth-first](./javascript/data-structures/trees/README.md)
