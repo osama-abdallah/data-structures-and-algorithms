@@ -42,7 +42,7 @@ Find the maximum value stored in the tree. You can assume that the values stored
 
 ### Whiteboard Process
 
-![imaage](./assets/tree-Max.png)
+![image](./assets/tree-Max.png)
 
 ### Approach & Efficiency
 
@@ -66,3 +66,24 @@ Return: list of all values in the tree, in the order they were encountered
 ### Approach & Efficiency
 
 both methods O(n)
+
+## tree fizz buzz
+
+### Challenge Summary
+
+Write a function called fizz buzz tree
+Arguments: k-ary tree
+Return: new k-ary tree
+Determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+
+If the value is divisible by 3, replace the value with “Fizz”
+If the value is divisible by 5, replace the value with “Buzz”
+If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+If the value is not divisible by 3 or 5, simply turn the number into a String.
+### Whiteboard Process
+
+![image](./assets/tree-fizz-buzz.png)
+
+### Approach & Efficiency
+
+Big O Space = O(1), Time = O(1) to O(n^2)
