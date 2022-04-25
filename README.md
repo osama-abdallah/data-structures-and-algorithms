@@ -39,3 +39,4 @@ To run your tests
 - [max-tree](./javascript/data-structures/trees/README.md)
 - [tree-breadth-first](./javascript/data-structures/trees/README.md)
 - [tree-fizz-buzz](./javascript/data-structures/trees/README.md)
+- [Insertion Sort](./javascript/code-challenges/Insertion-Sort/blog.md)
