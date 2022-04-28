@@ -40,3 +40,4 @@ To run your tests
 - [tree-breadth-first](./javascript/data-structures/trees/README.md)
 - [tree-fizz-buzz](./javascript/data-structures/trees/README.md)
 - [Insertion Sort](./javascript/code-challenges/Insertion-Sort/blog.md)
+- [Merge Sort](./javascript/code-challenges/Merge-Sort/BLOG.md)
