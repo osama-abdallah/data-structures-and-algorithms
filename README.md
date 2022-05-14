@@ -42,3 +42,4 @@ To run your tests
 - [Insertion Sort](./javascript/code-challenges/Insertion-Sort/blog.md)
 - [Merge Sort](./javascript/code-challenges/Merge-Sort/BLOG.md)
 - [Quick Sort](./javascript/code-challenges/Quick-Sort/README.md)
+- [HashTables](./javascript/data-structures/hashtables/Implementation%3A%20Hash-Tables/README.md)
