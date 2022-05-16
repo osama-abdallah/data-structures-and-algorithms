@@ -43,3 +43,4 @@ To run your tests
 - [Merge Sort](./javascript/code-challenges/Merge-Sort/BLOG.md)
 - [Quick Sort](./javascript/code-challenges/Quick-Sort/README.md)
 - [HashTables](./javascript/data-structures/hashtables/Implementation%3A%20Hash-Tables/README.md)
+-[hashmap-repeated-word](./javascript/data-structures/hashtables/hashmap-repeated-word/README.md)
