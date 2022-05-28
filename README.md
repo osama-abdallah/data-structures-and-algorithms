@@ -45,3 +45,4 @@ To run your tests
 - [HashTables](./javascript/data-structures/hashtables/Implementation%3A%20Hash-Tables/README.md)
 - [hashmap-repeated-word](./javascript/data-structures/hashtables/hashmap-repeated-word/README.md)
 - [tree-intersection](./javascript/data-structures/tree-intersection/README.md)
+- [graph implementation](./javascript/data-structures/graph/Graph%20Implementation/README.md)
