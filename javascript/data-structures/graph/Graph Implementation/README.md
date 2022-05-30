@@ -4,7 +4,7 @@
 
 ## Challenge
 
-! [image](./assets/graph-implementation.png)
+![image](./assets/graph-implementation.png)
 
 ## Approach & Efficiency
 
