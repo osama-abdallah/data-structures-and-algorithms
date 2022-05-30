@@ -46,3 +46,4 @@ To run your tests
 - [hashmap-repeated-word](./javascript/data-structures/hashtables/hashmap-repeated-word/README.md)
 - [tree-intersection](./javascript/data-structures/tree-intersection/README.md)
 - [graph implementation](./javascript/data-structures/graph/Graph%20Implementation/README.md)
+- [graph-breadth-first](./javascript/data-structures/graph/graph-breadth-first/README.md)
