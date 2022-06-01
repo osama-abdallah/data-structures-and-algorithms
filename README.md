@@ -47,3 +47,5 @@ To run your tests
 - [tree-intersection](./javascript/data-structures/tree-intersection/README.md)
 - [graph implementation](./javascript/data-structures/graph/Graph%20Implementation/README.md)
 - [graph-breadth-first](./javascript/data-structures/graph/graph-breadth-first/README.md)
+- [graph-business-trip](./javascript/data-structures/graph/graph-business-trip/README.md)
+
