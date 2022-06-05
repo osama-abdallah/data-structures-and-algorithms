@@ -57,53 +57,84 @@ class Graph {
     }
   }
 
-  BreadthFirst(node) {
-    const queue = [];
-    const visited = [];
+  BreadthFirst(node){
+    const queue=[];
+    const visited=[];
+
 
     queue.unshift(node);
     visited.push(node);
     while (queue.length) {
-      const current = queue.pop();
-      const neighbors = this.getNeighbors(current);
+      const current=queue.pop();
+      const neighbors=this.getNeighbors(current);
       for (const neighbor of neighbors) {
-        const vertex = neighbor.vertex;
-        if (visited.includes(vertex)) {
+        const vertex=neighbor.vertex;
+        if(visited.includes(vertex)){
           continue;
-        } else {
+        }else{
           visited.push(vertex);
           queue.unshift(vertex);
         }
       }
     }
-    let result = visited.map((el) => {
+    let result=visited.map(el=>{
       return el.value;
     });
     return result.toString();
   }
 
-  businessTrip(graph, arr) {
-    let totalcost = 0;
-    if (graph.adjacencyList.has(arr[0])) {
-      let list = graph.adjacencyList.get(arr[0]);
-      for (let i = 1; i < arr.length; i++) {
-        let flag = false;
-        for (const { vertex, wieght } of list) {
-          if (vertex === arr[i]) {
-            flag = true;
-            totalcost += wieght;
-            break;
-          }
-        }
-        if (!flag) {
-          return [false, 0];
+  depthFirst(node){
+    const visitedNode=new Set();
+    visitedNode.add(node);
+
+    const travers=(current,visited)=>{
+      visitedNode.add(current);
+      const neighbors=this.getNeighbors(current);
+      for (const neighbor of neighbors) {
+        if (!visited.has(neighbor.vertex)) {
+          travers(neighbor.vertex,visited);
         }
       }
-    } else {
-      return [false, 0];
+    };
+    travers(node,visitedNode);
+    let result='';
+    for (const iterator of visitedNode) {
+      result+=iterator.value+',';
     }
-    return [true, totalcost];
+    return result;
   }
 }
+let test = new Graph();
+let one = new Vertex('A');
+let two = new Vertex('B');
+let three = new Vertex('C');
+let four = new Vertex('D');
+let five = new Vertex('E');
+let six = new Vertex('F');
+let seven = new Vertex('G');
+let eight = new Vertex('H');
 
-module.exports = Graph;
+test.addVertex(one);
+test.addVertex(two);
+test.addVertex(three);
+test.addVertex(four);
+test.addVertex(five);
+test.addVertex(six);
+test.addVertex(seven);
+test.addVertex(eight);
+
+test.addDirectedEdge(one, two);
+test.addDirectedEdge(one, four);
+test.addDirectedEdge(two, four);
+test.addDirectedEdge(two, three);
+test.addDirectedEdge(two, seven);
+test.addDirectedEdge(four, five);
+test.addDirectedEdge(four, six);
+test.addDirectedEdge(four, eight);
+test.addDirectedEdge(six, eight);
+
+console.log(test.depthFirst(one));
+
+
+
+module.exports=Graph;
