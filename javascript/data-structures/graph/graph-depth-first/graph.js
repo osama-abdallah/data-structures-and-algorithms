@@ -37,6 +37,7 @@ class Graph {
     try {
       let collectionOfNodes = [];
       for (const [vertex, edge] in this.adjacencyList.entries()) {
+        console.log(edge);
         collectionOfNodes.push(vertex);
       }
       return collectionOfNodes;
@@ -49,6 +50,7 @@ class Graph {
     try {
       let size = 0;
       for (const vertex of this.adjacencyList.keys()) {
+        console.log(vertex);
         size++;
       }
       return size;
