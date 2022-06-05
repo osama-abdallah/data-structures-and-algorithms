@@ -86,10 +86,10 @@ class Graph {
     let totalcost = 0;
     if (graph.adjacencyList.has(arr[0])) {
       let list = graph.adjacencyList.get(arr[0]);
-      for (let i = 1; i < arr.length; i++) {
+      for (let i = 0; i < arr.length; i++) {
         let flag = false;
         for (const { vertex, wieght } of list) {
-          if (vertex === arr[i]) {
+          if (vertex == arr[i]) {
             flag = true;
             totalcost += wieght;
             break;
