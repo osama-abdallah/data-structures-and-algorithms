@@ -1,5 +1,8 @@
 'use strict';
-const LinkedList = require('../linkedList/linkedList');
+
+const LinkedList = require('./linkedList');
+
+
 class HashMap{
   constructor(size){
     this.size = size,
@@ -10,8 +13,9 @@ class HashMap{
 
 
   getHash (key){
-    const withPrime = key * 599;
-    return withPrime % this.size;
+    const assciSum = key.split('').reduce((p, n) => p + n.charCodeAt(0), 0);
+    const withPrime = assciSum * 599;
+    return withPrime % this.size; // 0-10, 0-1024
   }
 
   set(key ,value){
@@ -33,7 +37,10 @@ class HashMap{
 
   get(key){
     const hash = this.getHash(key);
-    return this.map[hash].contain(key);
+    if(!this.map[hash]){
+      return null;
+    }else{
+      return this.map[hash].contain(key);}
   }
 
 
@@ -57,7 +64,9 @@ class HashMap{
       this.set(lowerItem,lowerItem);
 
       let hash = this.getHash(lowerItem);
+      //  console.log(this.map[9]);
       let current =   this.map[hash].head;
+      // console.log(current);
       if(current.next){
         while (current !== null){
           array.push(Object.keys(current.value)[0] );
@@ -73,47 +82,6 @@ class HashMap{
 
     }
 
-  }
-
-
-  tree_intersection(tree1 , tree2){
-
-
-    let array1 = tree1.PreOrder();
-    let array2 = tree2.PreOrder();
-
-    array1.forEach(item =>{
-      this.set(item , item );
-    });
-
-    array2.forEach(item =>{
-      this.set(item , item );
-    });
-
-    let finalArray =[];
-
-    this.map.forEach(item =>{
-
-      let array = [];
-      let current =  item.head;
-      if(current.next){
-        while (current !== null){
-          array.push(Object.keys(current.value)[0] );
-          current = current.next;
-        }
-
-        const toFindDuplicates = array => array.filter((item, index) => array.indexOf(item) !== index);
-        const duplicateElementa = toFindDuplicates(array);
-        if(duplicateElementa.length > 0 ){
-          for (let i = 0 ; i<duplicateElementa.length ; i++){
-            finalArray.push( duplicateElementa[i]);}
-        }
-
-      }
-    });
-
-    console.log(this.map);
-    return finalArray;
   }
 
 }
