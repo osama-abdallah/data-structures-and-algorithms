@@ -11,12 +11,12 @@ class Graph {
     this.adjacencyList.set(vertex, []);
   }
 
-  addDirectedEdge(start, end) {
+  addDirectedEdge(start, end,wieght) {
     if (!this.adjacencyList.has(start) || !this.adjacencyList.has(end)) {
       console.log('Vertex dose not exist or invalid vertex');
     }
     const list = this.adjacencyList.get(start);
-    list.push(new Edge(end));
+    list.push(new Edge(end,wieght));
   }
 
   display() {
@@ -87,11 +87,11 @@ class Graph {
   businessTrip(graph, arr) {
     let totalcost = 0;
     if (graph.adjacencyList.has(arr[0])) {
-      let list = graph.adjacencyList.get(arr[0]);
       for (let i = 0; i < arr.length-1; i++) {
+        let list = graph.adjacencyList.get(arr[i]);
         let flag = false;
         for (const { vertex, wieght } of list) {
-          console.log(Vertex);
+          console.log(vertex,wieght);
           if (vertex === arr[i+1]) {
             flag = true;
             totalcost += wieght;

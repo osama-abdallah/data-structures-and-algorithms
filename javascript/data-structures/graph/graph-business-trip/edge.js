@@ -1,8 +1,8 @@
 'use strict';
 class Edge {
-  constructor(vertex, weight = 0) {
+  constructor(vertex, wieght = 0) {
     this.vertex = vertex;
-    this.weight = weight;
+    this.wieght = wieght;
   }
 }
 
