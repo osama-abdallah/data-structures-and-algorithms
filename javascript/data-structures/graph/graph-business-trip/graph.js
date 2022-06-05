@@ -87,16 +87,12 @@ class Graph {
   businessTrip(graph, arr) {
     let totalcost = 0;
     if (graph.adjacencyList.has(arr[0])) {
-      let list = graph.adjacencyList.get(arr[0]);
       for (let i = 0; i < arr.length-1; i++) {
+        let list = graph.adjacencyList.get(arr[i]);
         let flag = false;
         for (const { vertex, wieght } of list) {
-          console.log(Vertex);
+          console.log(vertex,wieght);
           if (vertex === arr[i+1]) {
-      for (let i = 1; i < arr.length; i++) {
-        let flag = false;
-        for (const { vertex, wieght } of list) {
-          if (vertex === arr[i]) {
             flag = true;
             totalcost += wieght;
             break;
