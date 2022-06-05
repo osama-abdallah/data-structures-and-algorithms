@@ -48,3 +48,4 @@ To run your tests
 - [graph implementation](./javascript/data-structures/graph/Graph%20Implementation/README.md)
 - [graph-breadth-first](./javascript/data-structures/graph/graph-breadth-first/README.md)
 - [graph-business-trip](./javascript/data-structures/graph/graph-business-trip/README.md)
+- [graph-depth-first](./javascript/data-structures/graph/graph-depth-first/README.md)
