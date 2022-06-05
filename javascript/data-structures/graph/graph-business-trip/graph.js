@@ -11,12 +11,12 @@ class Graph {
     this.adjacencyList.set(vertex, []);
   }
 
-  addDirectedEdge(start, end) {
+  addDirectedEdge(start, end,wieght) {
     if (!this.adjacencyList.has(start) || !this.adjacencyList.has(end)) {
       console.log('Vertex dose not exist or invalid vertex');
     }
     const list = this.adjacencyList.get(start);
-    list.push(new Edge(end));
+    list.push(new Edge(end,wieght));
   }
 
   display() {
